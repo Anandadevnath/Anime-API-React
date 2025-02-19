@@ -1,8 +1,33 @@
-# React + Vite
+# Anime Website using JIKKAN API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an anime website built using the JIKKAN API. The website allows users to browse anime, view details, and search for their favorite shows and movies.
 
-Currently, two official plugins are available:
+## Features
+- Fetch and display anime information from the JIKKAN API
+- Search functionality for anime titles
+- Display detailed information about each anime, including synopsis, episodes, and ratings
+- Responsive design for mobile and desktop users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- HTML, CSS, JavaScript
+- JIKKAN API for anime data
+- Frameworks/Libraries: (Add any libraries you used, e.g., React, Vue, Bootstrap)
+
+## API Integration
+- The website fetches data from the JIKKAN API using JavaScript's `fetch()` function.
+- API requests are structured as follows:
+  ```javascript
+  axios.get('https://api.jikan.moe/v4/anime')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error fetching data:', error));
+  ```
+
+## Future Enhancements
+- User authentication and watchlist feature
+- Dark mode support
+- Enhanced UI/UX improvements
+- Improved search filters
+
+## Contributions
+Contributions are welcome! Feel free to submit a pull request or report any issues.
