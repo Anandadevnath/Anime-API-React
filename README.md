@@ -14,7 +14,7 @@ This is an anime website built using the JIKKAN API. The website allows users to
 - Frameworks/Libraries: (Add any libraries you used, e.g., React, Vue, Bootstrap)
 
 ## API Integration
-- The website fetches data from the JIKKAN API using JavaScript's `fetch()` function.
+- The website fetches data from the JIKKAN API using JavaScript's `axios()` function.
 - API requests are structured as follows:
   ```javascript
   axios.get('https://api.jikan.moe/v4/anime')
